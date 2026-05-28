@@ -1,8 +1,0 @@
-{
-  "framework": "nextjs",
-  "functions": {
-    "pages/api/run-daily.js": {
-      "maxDuration": 60
-    }
-  }
-}
