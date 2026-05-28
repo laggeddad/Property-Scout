@@ -36,7 +36,8 @@ A production web app that monitors Zameen.com and Pakistani property portals dai
 
 1. Push this folder to a GitHub repository
 2. Go to [vercel.com](https://vercel.com) → **New Project** → Import your repo
-3. In **Environment Variables**, add all values from `.env.local.example`:
+3. ⚠️ **IMPORTANT — Root Directory**: If your repo contains only this project at the top level, leave Root Directory blank. If you put it in a subfolder (e.g. `property-agent/`), set Root Directory to `property-agent` in Vercel's project settings under **Build & Output Settings**.
+4. In **Environment Variables**, add all values from `.env.local.example`:
    ```
    ANTHROPIC_API_KEY = sk-ant-...
    NEXT_PUBLIC_SUPABASE_URL = https://xxx.supabase.co
